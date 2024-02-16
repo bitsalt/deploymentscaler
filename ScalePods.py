@@ -44,7 +44,7 @@ class ScalePods:
             replicas = deployment.spec.replicas
             replica_counts[name] = replicas
 
-        deployment_count = len(replica_counts)
+        deployment_count = sum(replica_counts.values)
         if deployment_count == 0:
             process, proc_index = pick(['No', 'Yes'], title="No deployments to store. Continue?", default_index=0)
             if process == 'No':
