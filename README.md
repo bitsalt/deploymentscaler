@@ -13,17 +13,10 @@ Notes:
 * Not tested on Windows.
 
 ## Dependencies
+Package dependencies are stored in requirements.txt. Other dependencies:
 * Python 3 (not tested on < 3.8.10)
-* kubernetes
-* pick
 * The script assumes that .kube/config will be present in the user's home directory. 
 
-(To do: include a requirements.txt file)
-
-```
-pip install kubernetes
-pip install pick
-```
 
 ## Using the script
 
